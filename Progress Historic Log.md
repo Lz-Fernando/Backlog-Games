@@ -11,5 +11,11 @@
 
 ## 28/01/2025  
 
-- Finalizado o curso **Java: consumindo API, gravando arquivos e lidando com erros** (Alura)  
-- Iniciado o curso **Figma: conhecendo a ferramenta**  
+- Finalizado o curso **Java: consumindo API, gravando arquivos e lidando com erros** (Alura);
+- Iniciado o curso **Figma: conhecendo a ferramenta** (Alura). 
+
+---
+
+## 29/01/2025
+
+- Continuidade no curso **Figma: conhecendo a ferramenta** (Alura).
