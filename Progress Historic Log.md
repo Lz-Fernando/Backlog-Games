@@ -7,20 +7,26 @@
 - Pesquisa  
 - Criação do repositório  
 
+
 ---
+
 
 ## 28/01/2025  
 
 - Finalizado o curso **Java: consumindo API, gravando arquivos e lidando com erros** (Alura);
 - Iniciado o curso **Figma: conhecendo a ferramenta** (Alura). 
 
+
 ---
+
 
 ## 29/01/2025
 
 - Continuidade no curso **Figma: conhecendo a ferramenta** (Alura).
 
+
 ---
+
 
 ## 30/01/2025
 
