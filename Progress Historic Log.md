@@ -19,3 +19,10 @@
 ## 29/01/2025
 
 - Continuidade no curso **Figma: conhecendo a ferramenta** (Alura).
+
+---
+
+## 30/01/2025
+
+- Continuidade no curso **Figma: conhecendo a ferramenta** (Alura).
+- Pesquisa sobre designs de sites semelhantes para ter uma referênciancia.
