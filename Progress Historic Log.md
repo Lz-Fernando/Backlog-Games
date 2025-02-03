@@ -30,5 +30,15 @@
 
 ## 30/01/2025
 
-- Continuidade no curso **Figma: conhecendo a ferramenta** (Alura).
+- Continuidade no curso **Figma: conhecendo a ferramenta** (Alura);
 - Pesquisa sobre designs de sites semelhantes para ter uma referênciancia.
+
+
+---
+
+
+## 03/02/2025
+
+- Continuação da pesquisa sobre designs de sites semelhantes para ter uma referênciancia;
+- Coleta de referências;
+- Inicio da criação do design do sistema no figma;
