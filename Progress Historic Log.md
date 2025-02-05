@@ -42,3 +42,11 @@
 - Continuação da pesquisa sobre designs de sites semelhantes para ter uma referênciancia;
 - Coleta de referências;
 - Inicio da criação do design do sistema no figma;
+
+
+---
+
+
+## 05/02/2025
+
+- Finalização do curso **Figma: conhecendo a ferramenta** (Alura);
