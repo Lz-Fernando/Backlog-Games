@@ -57,4 +57,5 @@
 
 ## 06/02/2025
 
-- Criação do design da página de login;
+- Criação do design da tela de login;
+- Criação do design da tela de cadastro;
