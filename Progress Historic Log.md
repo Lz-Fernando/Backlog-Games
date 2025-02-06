@@ -50,3 +50,11 @@
 ## 05/02/2025
 
 - Finalização do curso **Figma: conhecendo a ferramenta** (Alura);
+
+
+---
+
+
+## 06/02/2025
+
+- Criação do design da página de login;
