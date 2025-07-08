@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import ListaJogos from "./ListaJogos";
 
 export default function BuscarJogos() {
   const [nomeBuscado, setNomeBuscado] = useState('');
@@ -12,6 +12,7 @@ export default function BuscarJogos() {
     const resposta = await fetch(url);
     const data = await resposta.json();
     console.log(data.results);
+    setResultados(data.results);
   }
   console.log(nomeBuscado); // mostra o que o usuário digita
 
@@ -23,7 +24,11 @@ export default function BuscarJogos() {
       />
       <button
         onClick={() => BuscarJogoPorNome(nomeBuscado)}
-      />
+      >Buscar</button>
+
+      <div>
+        <ListaJogos jogos={resultados} />
+      </div>
     </div>
   );
 }
