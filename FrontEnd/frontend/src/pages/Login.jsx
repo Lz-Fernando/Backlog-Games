@@ -1,14 +1,18 @@
 import { useState } from "react";
+import { useNavigate, Link } from "react-router-dom";
 
 export default function Login() {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
-
+  const navigate = useNavigate();
+  
   function logar(event) {
     event.preventDefault();
 
     console.log(email);
     console.log(senha);
+
+    navigate("/buscar");
   }
 
   return (
@@ -25,7 +29,8 @@ export default function Login() {
           placeholder="Senha"
           onChange={(e) => setSenha(e.target.value)}
         />
-        <button type="submit">Enviar</button>
+        <button type="submit" >Enviar</button>
+        <Link to="/cadastro">Cadastrar-se</Link>
       </form>
     </div>
   );
