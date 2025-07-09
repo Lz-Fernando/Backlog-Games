@@ -8,13 +8,24 @@ export default function Cadastro() {
   const [mensagem, setMensagem] = useState("")
   const navigate = useNavigate();
 
-  function cadastrar(event) {
+  function cadastrarUsuario(event) {
+    const url = `http://localhost:8000/usuario`
+
     event.preventDefault();
 
     if (senha == verificarSenha) {
-      console.log(email);
-      console.log(senha);
-      console.log(verificarSenha);
+      const dados = {
+        email: email,
+        senha: senha
+      };
+
+      fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(dados)
+      });
 
       setMensagem("Cadastro realizado com sucesso!");
 
@@ -29,7 +40,7 @@ export default function Cadastro() {
   return (
     <div>
       <h1>Meu backlog</h1>
-      <form onSubmit={cadastrar}>
+      <form onSubmit={cadastrarUsuario}>
         <input
           type="email"
           placeholder="E-mail"
