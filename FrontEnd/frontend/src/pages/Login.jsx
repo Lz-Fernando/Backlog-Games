@@ -4,15 +4,25 @@ import { useNavigate, Link } from "react-router-dom";
 export default function Login() {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
+  const [mensagem, setMensagem] = useState("");
   const navigate = useNavigate();
   
   function logar(event) {
+    const url = `http://localhost:8000/usuario/login?email=${email}&senha=${senha}`;
     event.preventDefault();
 
-    console.log(email);
-    console.log(senha);
+    fetch(url)
+      .then(res => res.text())
+      .then(texto => {
+        const dados = texto ? JSON.parse(texto) : null;
 
-    navigate("/buscar");
+        if (dados && dados.id) {
+          setMensagem("Login realizado com sucesso!");
+          setTimeout(() => navigate("/buscar"), 3000);
+        } else {
+          setMensagem("Email ou Senha incorretos");
+        }
+      });
   }
 
   return (
@@ -32,6 +42,7 @@ export default function Login() {
         <button type="submit" >Enviar</button>
         <Link to="/cadastro">Cadastrar-se</Link>
       </form>
+      {mensagem && <p>{mensagem}</p>}
     </div>
   );
 }
