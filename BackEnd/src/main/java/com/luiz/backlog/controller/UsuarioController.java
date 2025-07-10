@@ -21,4 +21,9 @@ public class UsuarioController {
     public Usuario addUsuario(@RequestBody Usuario usuario) {
         return usuarioRepository.save(usuario);
     }
+
+    @GetMapping("/login")
+    public Usuario autenticarUsuario(@RequestParam String email, @RequestParam String senha) {
+        return usuarioRepository.findByEmailAndSenha(email, senha);
+    }
 }
