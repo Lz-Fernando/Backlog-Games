@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
+import Header from "../components/Header";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -25,8 +26,10 @@ export default function Login() {
       });
   }
 
-  return (
+  return ( 
     <div>
+      <Header />
+
       <h1>Meu backlog</h1>
       <form onSubmit={logar}>
         <input

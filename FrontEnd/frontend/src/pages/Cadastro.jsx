@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Header from "../components/Header";
 
 export default function Cadastro() {
   const [email, setEmail] = useState("");
@@ -39,6 +40,8 @@ export default function Cadastro() {
 
   return (
     <div>
+      <Header />
+
       <h1>Meu backlog</h1>
       <form onSubmit={cadastrarUsuario}>
         <input
